@@ -2,9 +2,9 @@
   "name": "edu_db_labs",
   "version": "2.1.0",
   "main": "index.js",
-  "description": "Databases labs template",
+  "description": "Система організації та управління опитуваннями експертів",
   "repository": "https://github.com/boldak/dis-edu",
-  "author": "Andrey Boldak <boldak.andrey@gmail.com>",
+  "author": "Herchuk Volodymyr <dvdvdv889@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",

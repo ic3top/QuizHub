@@ -3,14 +3,25 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © 2022 Herchuk Volodymyr"
 ---
 
 
-**Виконав(-ла):** 
+**Виконали студенти 2-го курсу, групи ІО-02:** 
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+Герчук Володимир [telegram](https://t.me/vovaHerchuk)
 
+Грицюк Максим [telegram](https://t.me/MaxHrytsia)
+
+Лазарев Матвій [telegram](https://t.me/Matthew_62)
+
+Собченко Ярослав [telegram](https://t.me/YaroslavSobchenko)
+
+Воробйов Антон [telegram](http://t.me/sirvorobiov)
+
+Каруца денис [telegram](https://t.me/Merkuriall)
+
+Дивнич Максим [telegram](https://t.me/maksdivnich)
 
 **Керівник**
 
