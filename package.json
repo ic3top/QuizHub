@@ -2,8 +2,8 @@
   "name": "edu_db_labs",
   "version": "2.1.0",
   "main": "index.js",
-  "description": "Система організації та управління опитуваннями експертів",
-  "repository": "https://github.com/boldak/dis-edu",
+  "description": "QuizHub",
+  "repository": "https://github.com/ic3top/QuizHub",
   "author": "Herchuk Volodymyr <dvdvdv889@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {

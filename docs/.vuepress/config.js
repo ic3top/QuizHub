@@ -7,15 +7,14 @@ module.exports = {
       serviceWorker: true,
       updatePopup: true
     },
-    ,
     ['container', {
       type: 'vue',
       before: '<pre class="vue-container"><code>',
       after: '</code></pre>'
     }]
   ],
-  port: 3030,
-  base: '/edu_db_labs/',
+  port: 3000,
+  base: '/QuizHub/',
   theme: 'cool',
   // dest: 'dist',
   head: [
@@ -25,7 +24,7 @@ module.exports = {
 
   ],
   themeConfig: {
-    // logo: './myAvatar.png',
+    logo: '/logo.png',
     sidebar: [
     {
       title: 'Вступ',
@@ -76,7 +75,7 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/ic3top/edu_db_labs',
+    repo: 'https://github.com/ic3top/QuizHub',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Github',
@@ -95,7 +94,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Система організації та управління опитуваннями експертів',
+  title: 'QuizHub',
   description: 'Лабораторні роботи з дисципліни "Організація баз даних"',
   configureWebpack: {
     resolve: {
