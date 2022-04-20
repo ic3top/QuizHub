@@ -2,11 +2,13 @@
 
 Цей документ містить в собі опис основних сценаріїв роботи системи.
 
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/).
+Вбудовування зображень діаграм здійснюється з використанням сервісу [UML Editor](https://jace-dev.herokuapp.com/design/uml-editor#/).
 
-В markdown-файлі використовується опис діаграми
+В markdown-файлі використовується опис діаграми.
 
 ## Діаграма прецедентів
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -28,7 +30,12 @@
 
 @enduml
 
+ </center>
+<br><br>
+
 ## Схеми використання для користувача
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -45,7 +52,12 @@
 
 @enduml
 
+</center>
+<br><br>
+
 ## Схеми використання для авторизованого користувача
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -62,7 +74,12 @@
 
 @enduml
 
+</center>
+<br><br>
+
 ## Схеми використання для менеджера організації
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -83,9 +100,14 @@
 
 @enduml
 
+</center>
+<br><br>
+
 ## Сценарії використання для користувача
 
 - ID: v1.AUTH.001
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -126,7 +148,11 @@
 
 @enduml
 
+</center>
+
 - ID: v1.AUTH.002
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -134,8 +160,8 @@
         <font color=000 size=14><b>ID:</b> v1.AUTH.002
         <font color=000 size=14><b>Назва:</b> Авторизуватись у системі
         <font color=000 size=14><b>Учасники:</b> Користувач, Система
-        <font color=000 size=14><b>Передумови:</b> Користувач зареєстрований у системі.
-        <font color=000 size=14> Користувач не авторизований у системі.
+        <font color=000 size=14><b>Передумови:</b> Користувач зареєстрований у системі
+        <font color=000 size=14> Користувач не авторизований у системі
         <font color=000 size=14><b>Результат:</b> Авторизація у системі
         <font color=000 size=14><b>Виключні ситуації:</b> v1.AUTH.EX.002
         <font color=000 size=14> v1.AUTH.EX.003
@@ -144,16 +170,16 @@
 
     end header
 
-|Користувач|
-start
-: Натискає кнопку "Вхід";
-: Передає авторизаційні дані;
-|Система|
-: Ідентифікує користувача;
-note right #ffaaaa
-<b> Можлива
-<b> v1.AUTH.EX.002
-end note
+        |Користувач|
+        start
+        : Натискає кнопку "Вхід";
+        : Передає авторизаційні дані;
+        |Система|
+        : Ідентифікує користувача;
+        note right #ffaaaa
+        <b> Можлива
+        <b> v1.AUTH.EX.002
+        end note
 
         : Авторизує користувача;
         note right #ffaaaa
@@ -168,9 +194,14 @@ end note
 
 @enduml
 
+</center>
+<br><br>
+
 ## Сценарії використання для авторизованого користувача
 
 - ID: v1.USER.001
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -205,7 +236,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.USER.002
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -213,8 +248,8 @@ end note
         <font color=000 size=14><b>ID:</b> v1.USER.002
         <font color=000 size=14><b>Назва:</b> Отримати зворотній зв'язок стосовно надісланого опитування
         <font color=000 size=14><b>Учасники:</b> Користувач, Система
-        <font color=000 size=14><b>Передумови:</b> Користувач має доступ до запитаного опитування.
-        <font color=000 size=14> Користувач коректно пройшов опитування.
+        <font color=000 size=14><b>Передумови:</b> Користувач має доступ до запитаного опитування
+        <font color=000 size=14> Користувач коректно пройшов опитування
         <font color=000 size=14> У системі є дані про зворотній зв'язок стосовно опитування
         <font color=000 size=14><b>Результат:</b> Зворотній зв'язок стосовно надісланого опитування
         <font color=000 size=14><b>Виключні ситуації:</b> v1.AUTH.EX.004
@@ -253,9 +288,14 @@ end note
 
 @enduml
 
+</center>
+<br><br>
+
 ## Сценарії для менеджера організацій
 
 - ID: v1.QUIZ.001
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -312,7 +352,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.QUIZ.002
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -372,7 +416,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.QUIZ.003
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -431,7 +479,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.QUIZ.004
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -499,9 +551,14 @@ end note
 
 @enduml
 
+</center>
+<br><br>
+
 ## Виключні випадки
 
 - ID: v1.AUTH.EX.001
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -534,7 +591,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.AUTH.EX.002
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -543,7 +604,7 @@ end note
         <font color=000 size=14><b>Назва:</b> Відхилити спробу авторизації через помилку ідентифікації
         <font color=000 size=14><b>Учасники:</b> Користувач, Система
         <font color=000 size=14><b>Передумови:</b> Користувач не авторизований у системі
-        <font color=000 size=14> Система не змогла ідентифікувати користувача.
+        <font color=000 size=14> Система не змогла ідентифікувати користувача
         <font color=000 size=14><b>Результат:</b> Повідомлення про помилку спроби авторизації
 
         <font color=000 size=14><b>Основний сценарій:</b>
@@ -569,7 +630,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.AUTH.EX.003
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -607,7 +672,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.AUTH.EX.004
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -642,7 +711,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.COMMON.EX.001
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -674,7 +747,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.COMMON.EX.002
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -707,7 +784,11 @@ end note
 
 @enduml
 
+</center>
+
 - ID: v1.COMMON.EX.003
+
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -739,3 +820,5 @@ end note
         stop;
 
 @enduml
+
+</center>
