@@ -47,8 +47,8 @@
     usecase "<b>AUTH.002\nАвторизуватись у системі" as Authorize
 
     User -r-> AUTH
-    AUTH .d.> Register : extends
-    AUTH .d.> Authorize : extends
+    Register .u.> AUTH : extends
+    Authorize .u.> AUTH : extends
 
 @enduml
 
@@ -69,8 +69,8 @@
     usecase "<b>USER.002\nОтримати зворотній зв'язок \nстосовно надісланого опитування" as GetREVIEW
 
     AuthorizedUser -r-> USER
-    USER .d.> GetData : extends
-    USER .d.> GetREVIEW : extends
+    GetData .u.> USER : extends
+    GetREVIEW .u.> USER : extends
 
 @enduml
 
@@ -93,10 +93,10 @@
     usecase "<b>USER.004\nЗгенерувати нове опитування\nна основі завершеного" as GeneratePoll
 
     OrganizationManager -r-> QUIZ
-    QUIZ .u.> CreatePoll : extends
-    QUIZ .u.> GetResults : extends
-    QUIZ .d.> FinishSurvey : extends
-    QUIZ .d.> GeneratePoll : extends
+    CreatePoll .d.> QUIZ : extends
+    GetResults .d.> QUIZ : extends
+    FinishSurvey .u.> QUIZ : extends
+    GeneratePoll .u.> QUIZ : extends
 
 @enduml
 
