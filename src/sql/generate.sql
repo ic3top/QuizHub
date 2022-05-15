@@ -1,13 +1,3 @@
-# Реалізація інформаційного та програмного забезпечення
-
-В рамках проекту розробляється: 
-- SQL-скрипт для створення на початкового наповнення бази даних
-- RESTfull API для взаємодії з клієнтом
-
-## SQL-скрипт для створення на початкового наповнення бази даних
-
-```sql
-
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
 
@@ -396,9 +386,3 @@ USE `mydb`;
 INSERT INTO `mydb`.`QuestionFeedback` (`id`, `Comment`, `PollFeedback_id`, `Answer_id`) VALUES (1, 'That is very true', 1, 1);
 
 COMMIT;
-
-```
-
-## RESTfull API  для взаємодії з клієнтом
-
-REST API написано з використання Node.js і Express framework. Вихідний код доступний за посиланням: [https://github.com/ic3top/QuizHub/tree/master/src/js](https://github.com/ic3top/QuizHub/tree/master/src/js); у наступному розділі цей API протестовано.
